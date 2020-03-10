@@ -15,6 +15,11 @@
 		77ED9C1A24176F500051A0B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77ED9C1824176F500051A0B4 /* LaunchScreen.storyboard */; };
 		77ED9C2524176F500051A0B4 /* SwiftUIDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77ED9C2424176F500051A0B4 /* SwiftUIDemoTests.swift */; };
 		77ED9C3024176F500051A0B4 /* SwiftUIDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77ED9C2F24176F500051A0B4 /* SwiftUIDemoUITests.swift */; };
+		77ED9C432417711C0051A0B4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77ED9C422417711C0051A0B4 /* User.swift */; };
+		77ED9C45241771590051A0B4 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77ED9C44241771590051A0B4 /* Post.swift */; };
+		77ED9C48241771F90051A0B4 /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77ED9C47241771F90051A0B4 /* TestData.swift */; };
+		77ED9C4D2417734A0051A0B4 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77ED9C4C2417734A0051A0B4 /* PostView.swift */; };
+		77ED9C4F241773860051A0B4 /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77ED9C4E241773860051A0B4 /* AvatarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		77ED9C2B24176F500051A0B4 /* SwiftUIDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		77ED9C2F24176F500051A0B4 /* SwiftUIDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDemoUITests.swift; sourceTree = "<group>"; };
 		77ED9C3124176F500051A0B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77ED9C422417711C0051A0B4 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		77ED9C44241771590051A0B4 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		77ED9C47241771F90051A0B4 /* TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
+		77ED9C4C2417734A0051A0B4 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		77ED9C4E241773860051A0B4 /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +109,9 @@
 		77ED9C0C24176F4E0051A0B4 /* SwiftUIDemo */ = {
 			isa = PBXGroup;
 			children = (
+				77ED9C49241772DC0051A0B4 /* View */,
+				77ED9C46241771EC0051A0B4 /* TestData */,
+				77ED9C3D241770BB0051A0B4 /* Model */,
 				77ED9C0D24176F4E0051A0B4 /* AppDelegate.swift */,
 				77ED9C0F24176F4E0051A0B4 /* SceneDelegate.swift */,
 				77ED9C1124176F4E0051A0B4 /* ContentView.swift */,
@@ -134,6 +147,32 @@
 				77ED9C3124176F500051A0B4 /* Info.plist */,
 			);
 			path = SwiftUIDemoUITests;
+			sourceTree = "<group>";
+		};
+		77ED9C3D241770BB0051A0B4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				77ED9C422417711C0051A0B4 /* User.swift */,
+				77ED9C44241771590051A0B4 /* Post.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		77ED9C46241771EC0051A0B4 /* TestData */ = {
+			isa = PBXGroup;
+			children = (
+				77ED9C47241771F90051A0B4 /* TestData.swift */,
+			);
+			path = TestData;
+			sourceTree = "<group>";
+		};
+		77ED9C49241772DC0051A0B4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				77ED9C4C2417734A0051A0B4 /* PostView.swift */,
+				77ED9C4E241773860051A0B4 /* AvatarView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,9 +306,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77ED9C4D2417734A0051A0B4 /* PostView.swift in Sources */,
+				77ED9C432417711C0051A0B4 /* User.swift in Sources */,
 				77ED9C0E24176F4E0051A0B4 /* AppDelegate.swift in Sources */,
 				77ED9C1024176F4E0051A0B4 /* SceneDelegate.swift in Sources */,
+				77ED9C48241771F90051A0B4 /* TestData.swift in Sources */,
+				77ED9C4F241773860051A0B4 /* AvatarView.swift in Sources */,
 				77ED9C1224176F4E0051A0B4 /* ContentView.swift in Sources */,
+				77ED9C45241771590051A0B4 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
